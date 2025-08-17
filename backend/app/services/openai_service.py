@@ -25,7 +25,7 @@ Make sure each entry follows the format "Artist Name - Song Title" exactly.
 
         try:
             response = self.client.chat.completions.create(
-                model="gpt-4",
+                model="gpt-3.5-turbo",
                 messages=[
                     {"role": "system", "content": "You are a music recommendation expert. Return only valid JSON arrays with no additional text."},
                     {"role": "user", "content": prompt}
